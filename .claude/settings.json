@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/**)",
+      "Bash(curl -s -X POST http://localhost:3000/api/session)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H 'Content-Type: application/json' -d '{\"message\":\"What is RAG?\",\"sessionId\":\"ac2baaa8-1261-4d2d-9211-9060431e133b\"}')",
+      "Bash(cat /tmp/server.log)",
+      "Bash(node -e ' *)",
+      "Bash(kill %1)",
+      "Bash(node server.js)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 35984 //F)",
+      "Bash(awk '{print $5}')",
+      "Bash(node -e \"process.stdin.on\\('data',d=>console.log\\(JSON.parse\\(d\\).reply\\)\\)\")"
+    ]
+  }
+}
